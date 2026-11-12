@@ -1,0 +1,14 @@
+/* Layout only. The original index.css and all palette values are preserved. */
+.side, .side nav, .form, .form label, .line > *, .detail-head > * { min-width: 0; }
+.toasts { max-width: calc(100vw - 36px); }
+.toast, .supplier-view dd { overflow-wrap: anywhere; }
+@media (max-width: 860px) {
+  .shell { grid-template-columns: minmax(0, 1fr); }
+  .side nav { flex: 0 1 100%; }
+  .main { width: 100%; }
+  .who { flex-wrap: wrap; }
+  .grid-2 { grid-template-columns: minmax(0, 1fr); }
+  .detail-head { flex-wrap: wrap; }
+  .toolbar .filter { max-width: 100%; }
+  .status-line { grid-template-columns: minmax(0, 1fr); }
+}
